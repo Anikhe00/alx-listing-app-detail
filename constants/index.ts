@@ -1,4 +1,5 @@
 // constants/index.ts
+import { PropertyProps } from "@/interfaces";
 
 // Example: API base URL
 export const API_BASE_URL = "https://api.example.com";
@@ -39,6 +40,42 @@ export const FOOTER_LINKS = [
       { label: "Twitter", href: "https://twitter.com" },
       { label: "Facebook", href: "https://facebook.com" },
       { label: "Instagram", href: "https://instagram.com" },
+    ],
+  },
+];
+
+export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
+  {
+    id: "beach-villa",
+    name: "Beachfront Villa",
+    rating: 4.8,
+    address: { city: "Lagos", country: "Nigeria" },
+    image: "/images/villa-main.jpg",
+    images: ["/images/villa1.jpg", "/images/villa2.jpg", "/images/villa3.jpg"],
+    description:
+      "Experience a serene stay at our beachfront villa with modern amenities and breathtaking ocean views.",
+    category: [
+      "WiFi",
+      "Swimming Pool",
+      "Kitchen",
+      "Air Conditioning",
+      "Parking",
+    ],
+    pricePerNight: 200,
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        avatar: "/images/avatar1.jpg",
+        comment:
+          "Amazing stay! The view was spectacular and the staff was friendly.",
+      },
+      {
+        name: "David Kim",
+        rating: 4,
+        avatar: "/images/avatar2.jpg",
+        comment: "Great place to relax. The rooms were clean and comfortable.",
+      },
     ],
   },
 ];
